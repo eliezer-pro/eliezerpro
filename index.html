@@ -112,18 +112,21 @@
     }
     .social a {
       display: flex; align-items: center; justify-content: center;
-      width: 52px; height: 52px;
-      background: var(--bg2);
-      border-radius: 14px;
+      width: 56px; height: 56px;
+      background: rgba(108,92,231,0.06);
+      border-radius: 16px;
       text-decoration: none;
-      border: 1px solid rgba(255,255,255,0.05);
-      transition: border-color 0.3s, transform 0.3s, background 0.3s;
+      border: 1px solid rgba(108,92,231,0.12);
+      transition: border-color 0.3s, transform 0.3s, background 0.3s, box-shadow 0.3s;
       font-size: 1.4rem;
+      color: var(--text2);
     }
     .social a:hover {
-      border-color: rgba(108,92,231,0.3);
-      background: rgba(108,92,231,0.08);
-      transform: translateY(-3px);
+      border-color: var(--accent);
+      background: rgba(108,92,231,0.12);
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0 8px 30px rgba(108,92,231,0.2);
+      color: #fff;
     }
     footer {
       position: fixed; bottom: 0; left: 0; right: 0; z-index: 1;
@@ -168,6 +171,8 @@
       <span>Amante del Caf&eacute;</span>
       <span>Pianista</span>
       <span>Dise&ntilde;ador Gr&aacute;fico</span>
+      <span>Desarrollador Web</span>
+      <span>IA &amp; Tecnolog&iacute;a</span>
       <span>Digital Creator</span>
     </p>
     <div class="social">
