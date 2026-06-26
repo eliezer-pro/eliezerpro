@@ -60,24 +60,6 @@
       max-width: 800px;
       padding: 40px 24px;
     }
-    .cursor-line {
-      display: inline-block;
-      font-size: 0.75rem;
-      color: var(--cyan);
-      letter-spacing: 6px;
-      text-transform: uppercase;
-      margin-bottom: 24px;
-      font-weight: 500;
-      opacity: 0.7;
-    }
-    .cursor-line::after {
-      content: '_';
-      animation: blink 1s step-end infinite;
-    }
-    @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
-    }
     h1 {
       font-size: clamp(2.5rem, 8vw, 4.5rem);
       font-weight: 800;
@@ -91,20 +73,6 @@
       -webkit-background-clip: text; -webkit-text-fill-color: transparent;
       background-clip: text;
       text-shadow: 0 0 40px rgba(0,229,255,0.15);
-    }
-    h1 .last {
-      color: var(--text);
-      opacity: 0.6;
-      font-weight: 300;
-      letter-spacing: 8px;
-      font-size: 0.7em;
-      display: block;
-      margin-top: 4px;
-    }
-    .bracket {
-      color: var(--cyan);
-      opacity: 0.4;
-      font-weight: 300;
     }
     .desc {
       font-size: clamp(0.8rem, 1.8vw, 1rem);
@@ -188,10 +156,8 @@
   <div class="glow-2"></div>
 
   <div class="container">
-    <div class="cursor-line">$ whoami</div>
     <h1>
-      <span class="bracket">[</span><span class="name">Eliezer Rufino Morales</span><span class="bracket">]</span>
-      <span class="last">// fullstack &amp; creative</span>
+      <span class="name">Eliezer Rufino Morales</span>
     </h1>
     <p class="desc">
       <span>Caf&eacute;</span>
